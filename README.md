@@ -26,6 +26,8 @@ The ODBC connection string in the script is configured for a DSN of *LOCAL so th
 
  Ex call: ```python3 odbccrud_qcustcdt.py```
 
+ ```customers.sql``` - This SQL script can be used to create a table named ```QIWS.CUSTOMERS``` if you would rather use a custom table instead of using ```QIWS.QCUSTCDT```. If you do create the ```QIWS.CUSTOMERS``` table and want to use it, you will need to go through the ```DbApp.py``` file and replace everywhere is says: ```QCUSTCDT``` for the table name with ```CUSTOMERS```.
+
  ## Using the Database Classes in Your Own Python Projects
 The only files needed to use the database classes in your own projects are: ```dbibmiodbc.py``` and ```dbapp.py```.
 
