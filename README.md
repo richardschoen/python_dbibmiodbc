@@ -28,7 +28,7 @@ The ODBC connection string in the script is configured for a DSN of *LOCAL so th
 
  ```customers.sql``` - This SQL script can be used to create a table named ```QIWS.CUSTOMERS``` if you would rather use a custom table instead of using ```QIWS.QCUSTCDT```. If you do create the ```QIWS.CUSTOMERS``` table and want to use it, you will need to go through the ```DbApp.py``` file and replace everywhere is says: ```QCUSTCDT``` for the table name with ```CUSTOMERS```.
 
-## Installing the Repository on Your IBM i System
+## Installing the App Repository on Your IBM i System
 Install ```unixODBC``` open source management packages.   
 
 Install ```Python``` open source management packages if not already installed.    
@@ -47,8 +47,6 @@ cd /python_dbibmiodbc
 python3 odbcread_qcustcdt.py
 python3 odbccrud_qcustcdt.py
 ```
-
-
 
  ## Using the Database Classes in Your Own Python Projects
 The only files needed to use the database classes in your own projects are: ```dbibmiodbc.py``` and ```dbapp.py```.
