@@ -24,7 +24,7 @@ Ex call: ```python3 odbccrud_qcustcdt.py```
 
 The ODBC connection string in the script is configured for a DSN of *LOCAL so the script can be run right from the IBM i system as a QShell or PASE commandl line call. It will use the current logged in user's credentials.   
 
- Ex call: ```python3 odbccrud_qcustcdt.py```
+ Ex call: ```python3 odbcread_qcustcdt.py```
 
  ```customers.sql``` - This SQL script can be used to create a table named ```QIWS.CUSTOMERS``` if you would rather use a custom table instead of using ```QIWS.QCUSTCDT```. If you do create the ```QIWS.CUSTOMERS``` table and want to use it, you will need to go through the ```DbApp.py``` file and replace everywhere is says: ```QCUSTCDT``` for the table name with ```CUSTOMERS```.
 
