@@ -5,6 +5,7 @@ There are also a couple of scripts to actually exercise the ODBC driver wrapper 
 
 The scripts utilze the Python pyodbc ODBC wrapper and the IBM i Access ODBC Driver for connectivity.   
 
+## Sample Python Script Project Files
 The database code classes should work on IBM i, Windows, Linux or MacOS as long as the IBM i Access ODBC Driver is configured and working and Python 3 and pyodbc are installed. 
 
 ```dbibmiodbc.py``` - This module contains a class named: DbIbmOdbc. This class is a wrapper for base ODBC database functionality without any other specific business logic. The wrapper uses pyodbc and the IBM i Access ODBC Driver for connectivity. 
@@ -22,4 +23,12 @@ Ex call: ```python3 odbccrud_qcustcdt.py```
 The ODBC connection string in the script is configured for a DSN of *LOCAL so the script can be run right from the IBM i system as a QShell or PASE commandl line call. It will use the current logged in user's credentials.   
 
  Ex call: ```python3 odbccrud_qcustcdt.py```
- 
+
+ ## Using the Database Classes in Your Own Python Projects
+The only files needed to use the database classes in your own projects are: ```dbibmiodbc.py``` and ```dbapp.py```.
+
+The classes should work fine with command line apps, Flask apps, FastAPI apps or other apps where database access to an IBM i is needed.    
+
+I'm not sure about using this class with the Django web framework, but if Django can utilize custom database call frameworks then it should work. I will test with Django at some point but that's not the main framework I use for Python web development. 
+
+
