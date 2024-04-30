@@ -1,7 +1,7 @@
 # Python IBM i ODBC Database Access Class and Application Subclass
-This repository contains a sample Python IBM i ODBC Database Class and Application Subclass for Structured Business App Logic.  
+This repository contains a sample Python IBM i ODBC Database Class and an Application Subclass for creating structured business app logic that is logically separated from the core IBM i ODBC class.   
 
-The intent of this class is to wrap up some of the complexity of ODBC data access in Python and allow database access for IBM i via ODBC to be made easy.    
+The intent of these classes is to wrap up some of the complexity of ODBC data access in Python and allow database access for IBM i via ODBC to be made easy with only a few lines of code. 
 
 There are also a couple of scripts to actually exercise the ODBC driver wrapper class and the DbApp class. The scripts can be called from a command line in QShell or PASE or run on Windows, Linux or MacOS if you have the IBM i Access ODBC driver loaded. 
 
